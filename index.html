@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mój Profil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+            animation: gradient 3s ease-in-out infinite;
+        }
+        @keyframes gradient {
+            0% {background-position: 0%;}
+            50% {background-position: 100%;}
+            100% {background-position: 0%;}
+        }
+        .profil {
+            width: 50%;
+            padding: 20px;
+            border: 5px solid #f00;
+            border-radius: 5px;
+            background: white;
+            animation: border 3s linear infinite;
+        }
+        @keyframes border {
+            0% {border-color: #f00;}
+            33% {border-color: #0f0;}
+            66% {border-color: #00f;}
+            100% {border-color: #f00;}
+        }
+        .profil img {
+            width: 100%;
+            height: auto;
+        }
+        .profil h1, .profil p {
+            text-align: center;
+            animation: colorchange 3s linear infinite;
+        }
+        @keyframes colorchange {
+            0% {color: #f00;}
+            33% {color: #0f0;}
+            66% {color: #00f;}
+            100% {color: #f00;}
+        }
+    </style>
+</head>
+<body>
+    <div class="profil">
+        <img src="zdjecie.jpg" alt="Zdjęcie profilowe">
+        <h1>Twoje Imię</h1>
+        <p>Opis o sobie...</p>
+    </div>
+</body>
+</html>
